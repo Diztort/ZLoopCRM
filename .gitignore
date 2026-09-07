@@ -1,0 +1,43 @@
+# === Зависимости и сборка (Общее для NestJS и Vue) ===
+node_modules/
+dist/
+.npm
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Секреты и настройки окружения (КРИТИЧЕСКИ ВАЖНО) ===
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Специфика NestJS (TypeScript & Сборка) ===
+/tsbudles
+*.tsbuildinfo
+# Если используете CLI Nest для сборки, папка dist уже добавлена выше
+
+# === Специфика Vue.js (Vite / Vue CLI) ===
+.local
+# Локальные файлы конфигурации Cypress (если используете тесты)
+cypress/videos/
+cypress/screenshots/
+
+# === Редакторы кода и системные файлы ===
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Операционные системы
+.DS_Store
+Thumbs.db
